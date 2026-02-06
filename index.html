@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Pages</title>
+    <title>Veilwhisper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -23,16 +26,63 @@
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding-top: 60px;
+        }
+
+        .title-container {
+            text-align: center;
+            padding: 0 30px;
+            max-width: 90%;
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 600;
+            color: #ffffff;
+            text-shadow: 
+                2px 2px 4px rgba(0, 0, 0, 0.8),
+                0 0 20px rgba(0, 0, 0, 0.5);
+            letter-spacing: 0.1em;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-family: 'Raleway', sans-serif;
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            font-weight: 300;
+            color: #e0e0e0;
+            text-shadow: 
+                1px 1px 3px rgba(0, 0, 0, 0.9),
+                0 0 15px rgba(0, 0, 0, 0.6);
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
         }
 
         /* Mobile devices (up to 768px) */
         @media only screen and (max-width: 768px) {
             body {
                 background-image: url('mobile-background.png');
+                padding-top: 40px;
+            }
+
+            .title-container {
+                padding: 0 20px;
+            }
+
+            h1 {
+                margin-bottom: 10px;
             }
         }
     </style>
 </head>
 <body>
+    <div class="title-container">
+        <h1>Veilwhisper</h1>
+        <h2>In Development</h2>
+    </div>
 </body>
 </html>
